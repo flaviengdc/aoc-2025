@@ -70,7 +70,7 @@ contains
    end function get_digits
 end module
 
-program part1
+program part2
    use mod, only: measure_joltage
    implicit none
 
@@ -88,4 +88,4 @@ program part1
    end do
 
    print *, result
-end program part1
+end program part2

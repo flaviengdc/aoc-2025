@@ -1,0 +1,28 @@
+target-version = "py313"
+
+[lint]
+select = [
+  "A",
+  "B",
+  "BLE",
+  "C4",
+  "E",
+  "ERA",
+  "F",
+  "FA",
+  "FIX",
+  "FURB",
+  "I",
+  "PIE",
+  "PL",
+  "PT",
+  "RET",
+  "RSE",
+  "RUF",
+  "SIM",
+  "SLF",
+  "TRY",
+  "T10",
+  "UP",
+]
+ignore = ["PLR0911"]

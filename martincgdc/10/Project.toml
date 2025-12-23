@@ -1,0 +1,15 @@
+name = "Aoc10"
+uuid = "008aa60b-55cf-463d-8d09-e9c936423255"
+version = "0.1.0"
+
+[deps]
+HiGHS = "87dc4568-4c63-4d18-b0c0-bb2238e4078b"
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+HiGHS = "1.20.1"
+JuMP = "1.29.3"
+Revise = "3.12.3"
+Test = "1.11.0"

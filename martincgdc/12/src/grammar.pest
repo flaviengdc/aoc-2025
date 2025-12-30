@@ -1,0 +1,17 @@
+ws = { " " }
+newline = { "\r\n" | "\n" | "\r"}
+integer = { ASCII_DIGIT+ }
+
+shape_line = { ("#" | ".")+ }
+index = { integer }
+shape = { index ~ ":" ~ newline ~ (shape_line ~ newline)+ }
+shapes = { shape ~ (newline ~ shape)* }
+
+height = { integer }
+width = { integer }
+region_size = { width ~ "x" ~ height ~ ":" }
+region_present_quantity = { integer ~ (ws ~ integer)* }
+region = { region_size ~ ws ~ region_present_quantity }
+regions = { region ~ (newline ~ region)* }
+
+file = { SOI ~ newline* ~ (shapes ~ newline ~ regions)* ~ newline? ~ EOI }
